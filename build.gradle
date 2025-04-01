@@ -31,6 +31,7 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    testLogging.showStandardStreams = true
     systemProperty 'junit.jupiter.extensions.autodetection.enabled', true
     systemProperty 'selenide.headless', System.getProperty('selenide.headless')
     systemProperty 'chromeoptions.prefs', System.getProperty('chromeoptions.prefs', "profile.password_manager_leak_detection=false")
